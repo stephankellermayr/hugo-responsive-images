@@ -26,7 +26,7 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bug Fixes
 
 * added custom shortcode test ([36df554](/github.com/future-wd/hugo-responsive-image/commit/36df5546bb4e9add7b1a2df7fae22f1511f8fbbe))
-* depreated image partials and shortcodes ([50cc205](/github.com/future-wd/hugo-responsive-image/commit/50cc2057e609a64f755516243fb977910bc9f579))
+* deprecated image partials and shortcodes ([50cc205](/github.com/future-wd/hugo-responsive-image/commit/50cc2057e609a64f755516243fb977910bc9f579))
 
 ### [1.3.3](/github.com/future-wd/hugo-responsive-image/compare/v1.3.2...v1.3.3) (2023-07-07)
 
@@ -176,7 +176,7 @@ Fix test site to match
 * remove crop ([0fe1c0a](/github.com/future-wd/hugo-responsive-image/commit/0fe1c0a69f3b51ba7d310c6493db74ff77f7637e))
 * remove crop ratio ([6f02d18](/github.com/future-wd/hugo-responsive-image/commit/6f02d18892932d35c9fe060e903801f6b639975f))
 * remove redundant files ([a11193a](/github.com/future-wd/hugo-responsive-image/commit/a11193a5b44158832f5ad8a38eda0241ed7f6cc8))
-* single format transofrm for <img> ([1807c54](/github.com/future-wd/hugo-responsive-image/commit/1807c54affe0c2a7d97b21d0ec24b0098dad3e31))
+* single format transform for <img> ([1807c54](/github.com/future-wd/hugo-responsive-image/commit/1807c54affe0c2a7d97b21d0ec24b0098dad3e31))
 * work on test site ([1a8b3dc](/github.com/future-wd/hugo-responsive-image/commit/1a8b3dc7b49596dd63294f78a1be3074c113be29))
 
 ### [1.1.13](/github.com/future-wd/hugo-responsive-image/compare/v1.1.12...v1.1.13) (2022-12-11)
@@ -235,8 +235,8 @@ Fix test site to match
 * rename dir ([8287e3b](/github.com/future-wd/hugo-responsive-image/commit/8287e3b7a54bd9574b60a28093eb747c68fb84dd))
 * rename partials ([c79a2b3](/github.com/future-wd/hugo-responsive-image/commit/c79a2b35645f64a7d179925ebef6f0c2b96a3a02))
 * render hook params partial ([63f38e4](/github.com/future-wd/hugo-responsive-image/commit/63f38e4fd2b8805a1326674177c9807ed1a1957e))
-* set up santiization and title/alt defaults ([eee6dcf](/github.com/future-wd/hugo-responsive-image/commit/eee6dcfde742cd8c975e63dc66ef80dcb6824d98))
-* set up santize templates ([a91de30](/github.com/future-wd/hugo-responsive-image/commit/a91de30d10d9cd94f1fbd824bd7270172a09face))
+* set up sanitization and title/alt defaults ([eee6dcf](/github.com/future-wd/hugo-responsive-image/commit/eee6dcfde742cd8c975e63dc66ef80dcb6824d98))
+* set up sanitize templates ([a91de30](/github.com/future-wd/hugo-responsive-image/commit/a91de30d10d9cd94f1fbd824bd7270172a09face))
 * simplify ([e3e5e42](/github.com/future-wd/hugo-responsive-image/commit/e3e5e420b73753a9e56f3418ca7763ba6c89d53c))
 * site camel before snake ([f043d4e](/github.com/future-wd/hugo-responsive-image/commit/f043d4ef5a62488f631b593cc2ad8adef838ef79))
 * site camel before snake case ([ae0c57d](/github.com/future-wd/hugo-responsive-image/commit/ae0c57d198f7e940a99fddf009a2fe295ffe6bc4))
@@ -249,7 +249,7 @@ Fix test site to match
 * update meta ([e58ffff](/github.com/future-wd/hugo-responsive-image/commit/e58ffff4eda381bf092efde75af16f95f640e497))
 * update mod replacement ([eb9e885](/github.com/future-wd/hugo-responsive-image/commit/eb9e8857ffae64aee8ab8497a8dff5d7beee2cd8))
 * update resample_filter options ([b7274fb](/github.com/future-wd/hugo-responsive-image/commit/b7274fb0be34fd76317b8137c5689fac8a9c9536))
-* update santize-widths ([cd6aa6d](/github.com/future-wd/hugo-responsive-image/commit/cd6aa6d282188b42188b39b76c658d6ef9b6b1c9))
+* update sanitize-widths ([cd6aa6d](/github.com/future-wd/hugo-responsive-image/commit/cd6aa6d282188b42188b39b76c658d6ef9b6b1c9))
 * updated user params to snake case ([c189140](/github.com/future-wd/hugo-responsive-image/commit/c189140b65d1ba7f0160dc8f8946b2c3d38a0731))
 * upgraded figure params ([6a96e52](/github.com/future-wd/hugo-responsive-image/commit/6a96e52e4df87a5723ea5280ee9289e9de887c95))
 * working ([77df960](/github.com/future-wd/hugo-responsive-image/commit/77df960fcc008c4378b2652bdb81609aee8dcf9f))
@@ -263,9 +263,9 @@ Fix test site to match
 
 * add comments ([1fee9b3](/github.com/future-wd/hugo-responsive-image/commit/1fee9b31ff4ffa49277316641a83a17061f1f99c))
 * move rrorf.html to utils ([3be225a](/github.com/future-wd/hugo-responsive-image/commit/3be225a5edb0cf085c8b5c3d2070975216d0b4a3))
-* moved width santize to util file ([b57effd](/github.com/future-wd/hugo-responsive-image/commit/b57effd4df72c63e26732238282aaed86aaa59f8))
+* moved width sanitize to util file ([b57effd](/github.com/future-wd/hugo-responsive-image/commit/b57effd4df72c63e26732238282aaed86aaa59f8))
 * remove redundant warnings as moved to params ([1503f71](/github.com/future-wd/hugo-responsive-image/commit/1503f7122c0ad51c715af0e31eaf76fe635ba17e))
-* shorteend code ([e381a54](/github.com/future-wd/hugo-responsive-image/commit/e381a54e1169b106465fe92ddc92c80fd73e1424))
+* shortened code ([e381a54](/github.com/future-wd/hugo-responsive-image/commit/e381a54e1169b106465fe92ddc92c80fd73e1424))
 
 ### [1.1.11](/github.com/future-wd/hugo-responsive-image/compare/v1.1.10...v1.1.11) (2022-10-02)
 
@@ -404,7 +404,7 @@ Fix test site to match
 * clean up shortcode params ([d3ce496](/github.com/powerfulweb/hugo-image/commit/d3ce496292a9b67d91bddc1594f633c78fcd5631))
 * clean up variables ([51956cf](/github.com/powerfulweb/hugo-image/commit/51956cf74af482cca98bf5e3afd23bbdf2ad1276))
 * clean up vars and error message ([a7c006f](/github.com/powerfulweb/hugo-image/commit/a7c006f37bf9194fbebd6396e0a97577fd94a302))
-* dont't use class for figures ([726d168](/github.com/powerfulweb/hugo-image/commit/726d168d5ef9ed8070a6b78c2cbba89f55945840))
+* don't use class for figures ([726d168](/github.com/powerfulweb/hugo-image/commit/726d168d5ef9ed8070a6b78c2cbba89f55945840))
 * example api config ([3290ba3](/github.com/powerfulweb/hugo-image/commit/3290ba3d1b08278910d482c44dd5555b3246f0a4))
 * figureTitle and heading level set at all levels ([71a15ba](/github.com/powerfulweb/hugo-image/commit/71a15ba8f2d9b405480ad5a4817c6b0a354f11e7))
 * generate placeholders lqip/dominant color/single color ([6667a3f](/github.com/powerfulweb/hugo-image/commit/6667a3f9f2dcbbefd76e4d052d1ad222008cc0e9))
@@ -440,7 +440,7 @@ Fix test site to match
 
 ### Bug Fixes
 
-* clean up lazysizes suppport ([6244b0e](/github.com/powerfulweb/hugo-image/commit/6244b0ea59b1e55650ad7b3e6c4322eb122ea4f5))
+* clean up lazysizes support ([6244b0e](/github.com/powerfulweb/hugo-image/commit/6244b0ea59b1e55650ad7b3e6c4322eb122ea4f5))
 
 ### [1.0.9](/github.com/powerfulweb/hugo-image/compare/v1.0.8...v1.0.9) (2022-08-21)
 

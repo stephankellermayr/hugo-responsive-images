@@ -26,7 +26,7 @@ hugo mod init github.com/user/project
 Then add this module to your projects configuration
 
 ```YAML
-# config.yaml
+# hugo.yaml
 module:
   imports:
   - path: github.com/future-wd/hugo-responsive-images/v2
@@ -41,9 +41,9 @@ hugo mod get
 ## Prerequisites
 
 - The latest GoLang (minimum 1.16). See <https://golang.org/dl/>.
-- The lates git for downloading the module. See <https://git-scm.com/downloads/>.
+- The latest git for downloading the module. See <https://git-scm.com/downloads/>.
 - Install the latest hugo (at least 0.146.0)
-- You hugo project must be initialized for hugo modules e.g. `hugo mod init github.com/username/project` in the root of your project.
+- Your hugo project must be initialized for hugo modules e.g. `hugo mod init github.com/username/project` in the root of your project.
 - Update your modules with `hugo mod get -u`
 
 ## Usage Examples (Quick Start)
@@ -74,7 +74,7 @@ hugo mod get
 >
 > Providing `width` will override `widths`. You can also provide `height` (see below - to alter aspect ratio)
 >
-> "src" is relative to the page's directory, unless you specify a gobal resource is "assets/{image path}"
+> "src" is relative to the page's directory, unless you specify a global resource is "assets/{image path}"
 
 ### Partial - Fixed with & global resource
 
@@ -128,7 +128,7 @@ If you are generating a fixed with image, you can alternatively specify the aspe
   ) }}
 ```
 
-### Shortcode - Cropping an image to an aspect ratio, custom respnsive widths
+### Shortcode - Cropping an image to an aspect ratio, custom responsive widths
 
 ```html
 {{< picture src=image.jpg aspect_ratio=4:3  widths=400,900 alt="Test Image" >}}
@@ -138,7 +138,7 @@ If you are generating a fixed with image, you can alternatively specify the aspe
 >
 > Double quotes (" ") don't have to be used for the property values if there are no spaces.
 >
-> Comma seperated values are converted into arrays, numbers are converted into integers.
+> Comma separated values are converted into arrays, numbers are converted into integers.
 >
 > aspect_ratio is defined with the format `aspect_ratio=16:9`
 
@@ -259,8 +259,8 @@ You can suppress the no alt text error with the `ignoreErrors` config.
 
 imaging:
   anchor: Smart # for smart cropping when setting the fillRatio
-  bgColor: '#ffffff' # when converting transparent images to formats which dont support transparency
-  hint: photo # for conversin to webp
+  bgColor: '#ffffff' # when converting transparent images to formats which don't support transparency
+  hint: photo # for conversion to webp
   quality: 75 # compression quality
   resample_filter: Box # compression filter
 ignoreErrors: ["alt-error"] # suppress error message if no alt text (or title) has been provided.
@@ -406,7 +406,7 @@ its recommended to use [hugos native image config](https://gohugo.io/content-man
 The following elements are required for the `<noscript>` module to work. 
 
 ```yaml
-#config.yaml
+#hugo.yaml
 params:
   image:
     noscript: true # or enable at page/meta data/inline level
@@ -474,7 +474,7 @@ Dominant/single color gif image size division factor can be adjusted with the `g
 example config:
 
 ```yaml
-#config.yaml
+#hugo.yaml
 params:
   images:
     loading: lazysizes # must be set as lazysizes will swap out the placeholder on load
@@ -594,16 +594,16 @@ See <https://gohugo.io/content-management/image-processing/#imaging-configuratio
 | ------------------ | --- | --- | --- | --- | ----------- | ------- | --- |
 | link               | YES | YES | NO  | NO  | Figure image link | `null` | |
 | target             | YES | YES | YES | YES | Figure link target | `"_blank"` for http links | |
-| rel                | YES | YES | YES | YES | Figure link rel| `"noopender, noreferrer"` for http links | |
+| rel                | YES | YES | YES | YES | Figure link rel| `"noopener, noreferrer"` for http links | |
 | figure_class       | YES | YES | YES | YES | Figure class | `"figure"` | |
 | figure_image_class | YES | YES | YES | YES | Figure image class | `"figure-img img-fluid"` | Outside of config file, .class is used to override default. |
 | figcaption_class   | YES | YES | YES | YES | Figcaption class | `"figure-caption"` | |
 | figcaption_title_h | YES | YES | YES | YES | Figcaption title level | 4 | |
 | figcaption_title   | YES | YES | NO  | NO  | Figcaption Title | `null` | |
-| attr               | YES | YES | NO  | NO  | Figcaption atttribute | `null` | |
+| attr               | YES | YES | NO  | NO  | Figcaption attribute | `null` | |
 | attr_link          | YES | YES | NO  | NO  | Figcaption attribute link | `null` | |
 | attr_link_target   | YES | YES | YES | YES | attr_link target | `"_blank"` for http links | |
-| attr_link_rel      | YES | YES | YES | YES | attr_link rel| `"noopender, noreferrer"` for http links | |
+| attr_link_rel      | YES | YES | YES | YES | attr_link rel| `"noopener, noreferrer"` for http links | |
 | caption            | YES | YES | NO  | NO  | Figcaption caption | `null` | |
 
 ## Advanced Usage

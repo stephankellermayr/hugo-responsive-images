@@ -13,7 +13,7 @@ test site fix js error - forEach iterating over undefined.. need to debug
 
 change quality of lqip if fit/crop ratio reduces the width of the image. see poor examples on test site
 
-can gif divison be removed, and fixed size solid gif be used
+can gif division be removed, and fixed size solid gif be used
 
 for above - page partial would be needed. Could caching be done here? use page context for scratch?
 

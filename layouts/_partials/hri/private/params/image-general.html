@@ -352,7 +352,7 @@
   {{/* produce responsive srcset
     ** produce array [{desc: "300w", width: 300},{desc: "600w", width: 600}]
     */}}
-  {{/* SANTIZE WIDTHS WITH UTIL */}}
+  {{/* SANITIZE WIDTHS WITH UTIL */}}
   {{ $sanitized_widths := partial "img-common/private/utils/restrict-widths" (dict 
     "ctx" $ctx
     "img" $.common.img
