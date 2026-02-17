@@ -146,7 +146,7 @@ const checkPicture = (divId, checks) => {
                 );
               }
             } else if (checkKey === 'notClass') {
-              // if notClass prop exists (check that classes dont exist)
+              // if notClass prop exists (check that classes don't exist)
               const matchedClasses = [];
               const checkNotClasses = checks[tagKey].notClass;
               checkNotClasses.forEach((className) => {

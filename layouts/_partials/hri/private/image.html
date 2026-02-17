@@ -26,8 +26,8 @@
   {{ $params = merge $params (dict "common" (dict "partial" .partial )) }}
 {{ end }}
 
-{{- /* santize inputs, process params */ -}}
-{{- /* only selected params are passed throgh */ -}}
+{{- /* sanitize inputs, process params */ -}}
+{{- /* only selected params are passed through */ -}}
 {{- $image_params := partial "hri/private/params/image.html" $params }}
 {{- $params = merge $params (dict "image" $image_params) }}
 
