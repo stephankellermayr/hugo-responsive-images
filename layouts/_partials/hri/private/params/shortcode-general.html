@@ -26,11 +26,11 @@
 {{ $s.Set "params" dict }}
 
 {{ with .shortcode_wrapper_class | default .shortcodeWrapperClass | default $meta.shortcode_wrapper_class | default $meta.shortcodeWrapperClass | default ($page.Param "image.shortcodeWrapperClass") | default ($page.Param "image.shortcode_wrapper_class") }}
-  {{ if ne (printf "%T" .) "int" }}
+  {{ if ne (printf "%T" .) "string" }}
     {{ partial "hri/private/utils/options-error" (dict 
       "var" "shortcode_wrapper_class"
       "val" .
-      "opts" "an integer"
+      "opts" "a string"
       "ctx" $error_ctx
     ) }}
   {{ else }}
