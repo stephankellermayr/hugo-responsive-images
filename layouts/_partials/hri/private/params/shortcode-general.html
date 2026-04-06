@@ -40,8 +40,8 @@
 
 
 {{ $widths_site := default $site.shortcodeWidths | default $site.shortcode_widths | default $site.widths }}
-{{ $withs_page  := $page.shortcode_widths | default $page.shortcodeWidths | default $page.widths | default $widths_site }}
-{{ $widths_meta := $meta.shortcode_widths | default $meta.shortcodeWidths | default $meta.widths | default $withs_page  }}
+{{ $widths_page := $page.shortcode_widths | default $page.shortcodeWidths | default $page.widths | default $widths_site }}
+{{ $widths_meta := $meta.shortcode_widths | default $meta.shortcodeWidths | default $meta.widths | default $widths_page }}
 
 
 {{ with .widths | default $widths_meta  }}
