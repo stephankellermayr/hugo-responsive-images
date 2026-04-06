@@ -25,7 +25,7 @@
 {{ $s := newScratch }}
 {{ $s.Set "params" dict }}
 
-{{ with .class | default .shortcode_wrapper_class | default .shortcodeWrapperClass | default $meta.shortcode_wrapper_class | default $meta.shortcodeWrapperClass | default ($page.shortcodeWrapperClass) | default ($page.shortcode_wrapper_class) }}
+{{ with .class | default .shortcode_wrapper_class | default .shortcodeWrapperClass | default $meta.shortcode_wrapper_class | default $meta.shortcodeWrapperClass | default ($page.shortcodeWrapperClass) | default ($page.shortcode_wrapper_class | default $site.shortcode_wrapper_class | default $site.shortcodeWrapperClass) }}
   {{ if ne (printf "%T" .) "string" }}
     {{ partial "hri/private/utils/options-error" (dict 
       "var" "shortcode_wrapper_class"
